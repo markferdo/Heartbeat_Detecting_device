@@ -12,3 +12,4 @@
 ### 8) If the signal value exceeds the max value, the max value and sample count will be updated with the latest values.
 ### 9) If the signal value goes below the mean threshold level, the peak is confirmed, and sample count is saved permanently, and the max value is set to zero.
 ### 10)This process will run continuously until the user presses the button again to stop the program.
+### This is the process of the algorithm, and it filters the noisiness of the signal by avoiding fake peaks. Heartbeat (BPM) is calculated based on the sample count between two peaks. BPM is set to calculate every 5 seconds and it is displayed on the LED display.
