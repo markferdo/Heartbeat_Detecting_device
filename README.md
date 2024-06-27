@@ -6,7 +6,7 @@
 ### 2) The algorithm is split into two sections: Determining the mean threshold and Peak detection.
 ### 3) First two seconds of data will be read to determine the mean threshold. The peak detection program starts once the mean threshold is available.
 ### 4) The mean threshold program continuously provides a new value every two seconds.
-## 5) The peak is determined by the slope deflection method. I.e. The peak is identified when the slope of the tangent line is zero.
+### 5) The peak is determined by the slope deflection method. I.e. The peak is identified when the slope of the tangent line is zero.
 ### 6) Once the first peak is identified the program checks whether the signal value is less than the mean threshold. At this point, the signal value is saved as max value and sample count was saved temporarily.
 ### 7) If the previous logic is unsatisfied, it checks whether the signal value is greater than the previously identified peak value (max value).
 ### 8) If the signal value exceeds the max value, the max value and sample count will be updated with the latest values.
